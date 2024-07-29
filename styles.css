@@ -2,14 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: url('https://as2.ftcdn.net/v2/jpg/04/88/74/11/1000_F_488741186_QKpiDwgJC0mkY18lnBTu5VMgN0A6qIf0.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
+
 
 header {
     background: #f05a28;
     color: #fff;
     padding: 1rem;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 0 20px #ff4500;
 }
 
 nav ul {
@@ -20,11 +27,18 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 1rem;
+    transition: all 0.3s ease;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover,
+nav ul li a:hover {
+    box-shadow: 0 0 10px #ff4500;
 }
 
 .section {
@@ -33,9 +47,14 @@ nav ul li a {
 }
 
 .home-section {
-    background: url('images/village.jpg') no-repeat center center;
+    background: url('../images/village.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
+    transition: all 0.3s ease;
+}
+
+.home-section:hover {
+    box-shadow: 0 0 20px #ff4500;
 }
 
 .container {
@@ -45,10 +64,20 @@ nav ul li a {
 
 h1, h2, h3 {
     margin: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+    box-shadow: 0 0 10px #ff4500;
 }
 
 p {
     margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+p:hover {
+    box-shadow: 0 0 10px #ff4500;
 }
 
 .btn {
@@ -59,6 +88,11 @@ p {
     text-decoration: none;
     border-radius: 5px;
     margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #ff4500;
 }
 
 .donation-options {
@@ -73,15 +107,25 @@ p {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .donation-form.active {
     display: block;
 }
 
+.donation-form:hover {
+    box-shadow: 0 0 20px #ff4500;
+}
+
 form label {
     display: block;
     margin: 0.5rem 0 0.2rem;
+    transition: all 0.3s ease;
+}
+
+form label:hover {
+    box-shadow: 0 0 10px #ff4500;
 }
 
 form input {
@@ -90,6 +134,11 @@ form input {
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form input:hover {
+    box-shadow: 0 0 10px #ff4500;
 }
 
 footer {
@@ -100,6 +149,11 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    transition: all 0.3s ease;
+}
+
+footer:hover {
+    box-shadow: 0 0 20px #ff4500;
 }
 
 .modal {
@@ -112,6 +166,7 @@ footer {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
 }
 
 .modal-content {
@@ -123,6 +178,11 @@ footer {
     max-width: 500px;
     border-radius: 10px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.modal-content:hover {
+    box-shadow: 0 0 20px #ff4500;
 }
 
 .close-button {
@@ -130,6 +190,7 @@ footer {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .close-button:hover,
@@ -137,4 +198,5 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
+    box-shadow: 0 0 10px #2a2523;
 }
