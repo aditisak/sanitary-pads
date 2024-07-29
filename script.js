@@ -16,7 +16,7 @@ document.getElementById('physical-donation-form').addEventListener('submit', fun
 
 document.getElementById('monetary-donation-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    document.getElementById('thank-you-message').style.display = 'block';
+    window.location.href = 'new-page.html'; // Change this URL to the new page
 });
 
 document.querySelector('.close-button').addEventListener('click', function() {
